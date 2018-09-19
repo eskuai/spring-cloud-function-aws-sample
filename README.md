@@ -1,7 +1,7 @@
 ### spring-cloud-function-aws-sample
 
 **create**<br />
-aws lambda create-function --function-name cloudfunction-aws --role arn:aws:iam::061594394094:role/lambda_basic_execution --zip-file fileb://target/cloudfunction-aws-0.0.1-SNAPSHOT-aws.jar --handler paq.functions.GreeterFunctionHandler  --runtime java8 --region eu-west-1 --timeout 30 --memory-size 1024 --publish
+aws lambda create-function --function-name cloudfunction-aws --role arn:aws:iam::xxx:role/lambda_basic_execution --zip-file fileb://target/cloudfunction-aws-0.0.1-SNAPSHOT-aws.jar --handler paq.functions.GreeterFunctionHandler  --runtime java8 --region eu-west-1 --timeout 30 --memory-size 1024 --publish
 
 **update**<br />
 aws lambda update-function-code  --function-name cloudfunction-aws   --zip-file fileb://target/cloudfunction-aws-0.0.1-SNAPSHOT-aws.jar
